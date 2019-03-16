@@ -1,2 +1,0 @@
-module ProblemStatementsHelper
-end
