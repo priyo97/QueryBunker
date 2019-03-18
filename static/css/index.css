@@ -1,0 +1,119 @@
+*{
+
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+.container-1{
+
+	margin: 20px;
+	padding: 10px;
+}
+
+#container-3{
+
+	height: 30px;
+	padding: 10px;
+	border-bottom: 2px black solid;
+}
+
+nav{
+
+	border: 2px black solid;
+	border-radius: 5px;
+	background: white;
+	height: 50px;
+	padding: 10px;
+}
+
+span{
+
+	font-weight: 5px;
+	margin-right: 10px;
+}
+span:hover{
+
+	color: grey;
+	cursor: pointer;
+	
+}
+
+#header-1{
+
+	float: left;
+	font-size: 31px;
+}
+
+#header-2{
+
+	float: right;
+}
+
+#sort{
+	padding-top: 10px;
+	float: right;
+}
+
+.question-segment{
+
+	padding: 10px;
+	height: 50px;
+	margin: 0px;
+	border-bottom: 1px black solid;
+}
+
+.count{
+	padding: 0px;
+	margin:0px;
+	float: left;
+	border-right: 1px black solid;
+	width: 15%;
+	height:40px;
+}
+
+.question{
+	padding:0px;
+	margin:0px;
+	float: left;
+	width: 65%;
+	height: 40px;
+}
+.user{
+	padding:0px;
+	margin:0px;
+	float: right;
+	border-left: 1px black solid;
+	width: 19%;
+	height: 40px;
+}
+
+.count-inner, .question-inner, .user-inner{
+
+	height:25px;
+}
+
+.count-element{
+
+	text-align: center;
+	float: left;
+	width: 33%;
+}
+
+#question-element{
+
+	font-size: 25px;
+	margin-left: 20px;
+}
+
+#question-tags{
+
+	margin-left: 20px;
+	margin-top: 10px;
+	color: red;
+}
+
+.user-element{
+	
+	text-align: right;
+}

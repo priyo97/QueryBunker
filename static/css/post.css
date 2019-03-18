@@ -1,0 +1,62 @@
+*{
+
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+.container-1{
+
+	margin: 20px;
+	padding: 10px;
+}
+
+#container-3{
+
+	height: 30px;
+	padding: 10px;
+	border-bottom: 2px black solid;
+}
+
+nav{
+
+	border: 2px black solid;
+	border-radius: 5px;
+	background: white;
+	height: 50px;
+	padding: 10px;
+}
+
+span{
+
+	font-weight: 5px;
+	margin-right: 10px;
+}
+span:hover{
+
+	color: grey;
+	cursor: pointer;
+	
+}
+
+#header-1{
+
+	float: left;
+	font-size: 31px;
+}
+
+#header-2{
+
+	float: right;
+}
+
+#sort{
+	padding-top: 10px;
+	float: right;
+}
+
+form{
+
+	border:2px black solid;
+	border-radius: 5px;
+}
