@@ -4,9 +4,12 @@
 	<title>Discussion forum</title>
 	<link rel="stylesheet" type="text/css" href="../static/css/index.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+	<script type="text/javascript" src="../static/js/database.js"></script>
+	<script type="text/javascript" src="../static/js/index.js"></script>
 </head>
 
-<body>
+<body ng-app="index-module">
+
 	<div class="container-1">
 		<nav id="header-1">
 			<div id="header-1-inner-1">
@@ -34,15 +37,15 @@
 
 			<div id="container-4">
 
-				<div id="questions-section">
+				<div id="questions-section" ng-controller="questions-section-controller">
 
-					<div class="question-segment">
+					<div class="question-segment" ng-repeat="q in questions">
 						
 						<div class="count">
 							<div class="count-inner">
-								<div class="count-element">0</div>
-								<div class="count-element">5</div>
-								<div class="count-element">6</div>
+								<div class="count-element" id="count-votes"> {{ q.num_votes }} </div>
+								<div class="count-element" id="count-answers"> {{ q.num_comments }} </div>
+								<div class="count-element" id="count-views"> {{ q.num_views }} </div>
 							</div>
 							<div class="count-inner">
 								<div class="count-element">votes</div>
@@ -54,7 +57,7 @@
 						<div class="question">
 							<div class="question-inner">
 								<div id="question-element">
-									What is this discussion forum about?
+									{{ q.topic }}
 								</div>
 							</div>
 							<div class="question-inner">
@@ -67,60 +70,18 @@
 						<div class="user">
 							<div class="user-inner user-element">
 								<div id="user-name">
-									priyo97	
+									{{ q.user_name }}
 								</div>
 							</div>
 							<div class="user-inner user-element">
 								
 								<div id="posted-time">
-									57 mins ago
+									{{ q.created_at }} ago
 								</div>
 							</div>
 						</div>	
 					</div>
 
-					<div class="question-segment">
-						
-						<div class="count">
-							<div class="count-inner">
-								<div class="count-element">0</div>
-								<div class="count-element">4</div>
-								<div class="count-element">7</div>
-							</div>
-							<div class="count-inner">
-								<div class="count-element">votes</div>
-								<div class="count-element">answers</div>
-								<div class="count-element">views</div>
-							</div>
-						</div>
-
-						<div class="question">
-							<div class="question-inner">
-								<div id="question-element">
-									When is it starting?
-								</div>
-							</div>
-							<div class="question-inner">
-								<div id="question-tags">
-									<span>#discuss</span>
-									<span>#excited</span>
-								</div>	
-							</div>
-						</div>
-						<div class="user">
-							<div class="user-inner user-element">
-								<div id="user-name">
-									alex21	
-								</div>
-							</div>
-							<div class="user-inner user-element">
-								
-								<div id="posted-time">
-									33 mins ago
-								</div>
-							</div>
-						</div>	
-					</div>
 				</div>
 
 				<div id="question-thread">
