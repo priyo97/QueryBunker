@@ -3,26 +3,26 @@
 <head>
 	<title>Discussion forum</title>
 	<link rel="stylesheet" type="text/css" href="../static/css/index.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
 </head>
 
 <body>
 	<div class="container-1">
-		<div class="container-2-">
-			<nav>
-				<div id="header-1">
-					<span>Discussion forum</span>
-				</div>
+		<nav id="header-1">
+			<div id="header-1-inner-1">
+				<span>Discussion forum</span>
+			</div>
 
-				<div id="header-2">
-					<span>Questions</span>
-					<span>tags</span>
-					<span>users</span>
-					<span>unanswered</span>
-					<span>ask a question</span>
-				</div>
-			</nav>
-		</div>
-		<div class="container-2">
+			<div id="header-1-inner-2">
+				<span>Questions</span>
+				<span>tags</span>
+				<span>users</span>
+				<span>unanswered</span>
+				<span>ask a question</span>
+			</div>
+		</nav>
+
+		<section class="container-2">
 			<div id="container-3">
 				<div id="sort">
 					<span>active</span>
@@ -33,6 +33,7 @@
 			</div>
 
 			<div id="container-4">
+
 				<div id="questions-section">
 
 					<div class="question-segment">
@@ -123,7 +124,6 @@
 				</div>
 
 				<div id="question-thread">
-					
 					<div id="user-post">
 						<div id="user-description">
 							<div id="profile-pic">
@@ -151,8 +151,11 @@
 					</div>
 
 					<div id="comments-section">
+						
 						<h3>Comments:</h3><br>
+
 						<div class="comment-segment">
+							
 							<div class="count">
 								<div class="count-inner">
 									<div class="count-element">0</div>
@@ -164,13 +167,14 @@
 								</div>
 							</div>
 
-							<div class="question">
-								<div class="question-inner">
-									<div id="question-element">
+							<div class="comment">
+								<div class="comment-inner">
+									<div id="comment-element">
 										Starting very soon.
 									</div>
 								</div>
-								<div class="question-inner">
+								<div class="comment-inner">
+								
 								</div>
 							</div>
 						
@@ -193,7 +197,7 @@
 				</div>
 			
 			</div>
-		</div>
+		</section>
 	</div>
 </body>
 </html>
