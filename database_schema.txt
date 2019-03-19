@@ -1,0 +1,41 @@
+TABLE 1:
+
+USERS
+---------------------------------------------
+id (PK)		|
+first_name 	|
+last_name	|	
+username	|
+email		|
+password	|
+phone_number	|
+---------------------------------------------
+
+TABLE 2:
+
+QUESTIONS
+---------------------------------------------
+id (PK)		| 
+topic 		| 
+content		| 
+created_at  	| 
+num_comments	| 
+num_views	|
+num_likes 	|
+num_dislikes	|
+user_id	(FK)	|
+---------------------------------------------
+
+TABLE 3:
+
+COMMENTS
+---------------------------------------------
+id (PK)		|
+content 	|
+created_at	|
+num_likes	|
+num_dislikes	|
+question_id (FK)|
+user_id (FK)	|
+
+---------------------------------------------
